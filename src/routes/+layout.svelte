@@ -1,53 +1,42 @@
-<script>
-	import Header from './Header.svelte';
-	import './styles.css';
+<script lang="ts">
+	import IconSvelte from '../lib/images/svelte-logo.svg';
+	import './styles.scss';
 </script>
 
 <div class="app">
-	<Header />
+	<nav><img src={IconSvelte} alt="Svelte Logo" /></nav>
 
 	<main>
 		<slot />
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
+	<footer>:)</footer>
 </div>
 
-<style>
+<style lang="scss">
 	.app {
 		display: flex;
 		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
+		padding: 0 1rem;
 		margin: 0 auto;
-		box-sizing: border-box;
-	}
+		max-width: 960px;
+		min-height: 100vh;
 
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
+		nav {
+			padding: 1rem 0;
+			display: flex;
+			justify-content: center;
 
-	footer a {
-		font-weight: bold;
-	}
+			img {
+				max-height: 60px;
+			}
+		}
 
-	@media (min-width: 480px) {
 		footer {
-			padding: 12px 0;
+			margin-top: auto;
+			padding: 1rem 0;
+			display: flex;
+			justify-content: center;
 		}
 	}
 </style>
