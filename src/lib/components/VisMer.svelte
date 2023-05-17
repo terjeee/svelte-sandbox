@@ -5,6 +5,8 @@
 	import cat4 from '../images/cat4.jpg';
 	import NotaBene from './lego/NotaBene.svelte';
 
+	let visMer = false;
+
 	const innstilling = [
 		[{ navn: 'Jonas', stilling: 'Partileder', innstilt: true, status: 'Fortsette' }],
 		[
@@ -22,10 +24,10 @@
 		]
 	];
 
-	function toggleShow() {}
+	const toggleShow = () => (visMer = !visMer);
 </script>
 
-<div class="container">
+<div class="container" style={!visMer ? 'height: 465px;' : ''}>
 	{#each innstilling as divisjon}
 		<ul>
 			{#each divisjon as politiker}
@@ -48,18 +50,21 @@
 			{/each}
 		</ul>
 	{/each}
-	<button on:click={toggleShow}>Vis mer</button>
+	<button on:click={toggleShow}>{!visMer ? 'Vis mer' : 'Vis mindre'}</button>
+	{#if !visMer}
+		<div class="fade" />
+	{/if}
 </div>
 
 <style lang="scss">
 	.container {
 		position: relative;
-		height: 50%;
 		max-width: 600px;
 		margin: 0 auto;
 		display: flex;
 		flex-direction: column;
 		gap: 2rem;
+		overflow: hidden;
 		ul {
 			display: flex;
 			flex-wrap: wrap;
@@ -99,6 +104,7 @@
 		}
 
 		button {
+			z-index: 100;
 			position: sticky;
 			margin: 0.5rem auto;
 			padding: 0.5rem 1rem;
@@ -113,6 +119,15 @@
 			&:hover {
 				background-color: #d9d9d9;
 			}
+		}
+
+		.fade {
+			position: absolute;
+			height: 35%;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(rgba(0, 0, 0, 0) 10%, white);
 		}
 	}
 </style>
