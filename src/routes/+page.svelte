@@ -6,12 +6,12 @@
 	<title>Svelte Sandbox</title>
 </svelte:head>
 
-<section>
+<main>
 	<VisMer />
-</section>
+</main>
 
 <style lang="scss">
-	section {
+	main {
 		padding: 4rem 0;
 		display: flex;
 		flex-direction: column;

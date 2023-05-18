@@ -5,11 +5,10 @@
 
 <div class="app">
 	<nav><img src={IconSvelte} alt="Svelte Logo" /></nav>
-
-	<main>
+	<div>
+		<aside>Hei</aside>
 		<slot />
-	</main>
-
+	</div>
 	<footer>:)</footer>
 </div>
 
@@ -32,11 +31,18 @@
 			}
 		}
 
+		div {
+			aside {
+				display: none;
+			}
+		}
+
 		footer {
 			margin-top: auto;
-			padding: 1rem 0;
+			padding: 2rem 0;
 			display: flex;
 			justify-content: center;
+			border-top: 1px black solid;
 		}
 	}
 </style>
