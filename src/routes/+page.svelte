@@ -11,10 +11,4 @@
 </main>
 
 <style lang="scss">
-	main {
-		padding: 4rem 0;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
 </style>

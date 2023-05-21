@@ -6,7 +6,12 @@
 <div class="app">
 	<nav><img src={IconSvelte} alt="Svelte Logo" /></nav>
 	<div>
-		<aside>Hei</aside>
+		<aside>
+			<ul>
+				<li>Aftenposten</li>
+				<li>Graf</li>
+			</ul>
+		</aside>
 		<slot />
 	</div>
 	<footer>:)</footer>
@@ -23,6 +28,7 @@
 
 		nav {
 			padding: 1rem 0;
+			margin-bottom: 4rem;
 			display: flex;
 			justify-content: center;
 
@@ -32,8 +38,13 @@
 		}
 
 		div {
+			display: flex;
+			gap: 4rem;
 			aside {
-				display: none;
+				ul {
+					li {
+					}
+				}
 			}
 		}
 
