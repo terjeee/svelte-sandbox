@@ -41,9 +41,11 @@
 			display: flex;
 			gap: 4rem;
 			aside {
+				overflow: scroll;
 				ul {
-					li {
-					}
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
 				}
 			}
 		}
