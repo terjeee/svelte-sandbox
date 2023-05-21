@@ -27,7 +27,7 @@
 	let toggleShow = () => (visMer = !visMer);
 </script>
 
-<section>
+<section id="#aftenposten">
 	<div class="container" class:shrink={!visMer} style={!visMer ? 'overflow:hidden' : ''}>
 		{#each innstilling as divisjon}
 			<ul>

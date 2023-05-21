@@ -1,6 +1,18 @@
 <script lang="ts">
 	import IconSvelte from '../lib/images/svelte-logo.svg';
 	import './styles.scss';
+
+	// ! FIKS
+	// ! FIKS
+	// ! FIKS
+	function scrollToView(event: PointerEvent | null) {
+		const el = document.querySelector(event.target.getAttribute('href'));
+
+		if (!el) return;
+		el.scrollToView({
+			behaviour: 'smooth'
+		});
+	}
 </script>
 
 <div class="app">
@@ -8,8 +20,8 @@
 	<div>
 		<aside>
 			<ul>
-				<li>Aftenposten</li>
-				<li>Graf</li>
+				<a href="#aftenposten" on:click|preventDefault={scrollToView}>Aftenposten</a>
+				<a href="#graf-01" on:click|preventDefault={scrollToView}>Graf</a>
 			</ul>
 		</aside>
 		<slot />
@@ -40,12 +52,14 @@
 		div {
 			display: flex;
 			gap: 4rem;
+
 			aside {
-				overflow: scroll;
+				margin-right: 0.5rem;
+				overflow-y: scroll;
 				ul {
 					display: flex;
 					flex-direction: column;
-					gap: 1rem;
+					gap: 0.5rem;
 				}
 			}
 		}
@@ -55,7 +69,6 @@
 			padding: 2rem 0;
 			display: flex;
 			justify-content: center;
-			border-top: 1px black solid;
 		}
 	}
 </style>
