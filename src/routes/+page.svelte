@@ -1,5 +1,5 @@
 <script lang="ts">
-	import VisMer from '$lib/components/VisMer.svelte';
+	import Aftenposten from '$lib/components/Aftenposten.svelte';
 </script>
 
 <svelte:head>
@@ -7,7 +7,7 @@
 </svelte:head>
 
 <main>
-	<VisMer />
+	<Aftenposten />
 </main>
 
 <style lang="scss">

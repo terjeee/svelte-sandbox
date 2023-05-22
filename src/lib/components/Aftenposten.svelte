@@ -27,7 +27,7 @@
 	let toggleShow = () => (visMer = !visMer);
 </script>
 
-<section id="#aftenposten">
+<section id="aftenposten">
 	<div class="container" class:shrink={!visMer} style={!visMer ? 'overflow:hidden' : ''}>
 		{#each innstilling as divisjon}
 			<ul>
@@ -70,7 +70,7 @@
 
 		.container {
 			position: relative;
-			max-height: 1250px;
+			max-height: 2250px;
 			display: flex;
 			flex-direction: column;
 			gap: 2rem;
@@ -95,9 +95,16 @@
 					img {
 						margin-bottom: 0.5rem;
 						display: block;
-						height: 100px;
-						width: 100px;
+						height: 75px;
+						width: 75px;
 						border-radius: 50%;
+					}
+
+					@media (min-width: 600px) {
+						img {
+							height: 100px;
+							width: 100px;
+						}
 					}
 
 					h3 {

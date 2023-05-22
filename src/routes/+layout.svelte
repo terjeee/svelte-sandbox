@@ -2,14 +2,12 @@
 	import IconSvelte from '../lib/images/svelte-logo.svg';
 	import './styles.scss';
 
-	// ! FIKS
-	// ! FIKS
-	// ! FIKS
-	function scrollToView(event: PointerEvent | null) {
-		const el = document.querySelector(event.target.getAttribute('href'));
-
+	function scrollToView(event: any) {
+		const targetEl = event.target.getAttribute('href');
+		const el = document.querySelector(targetEl);
+		console.log(el, targetEl);
 		if (!el) return;
-		el.scrollToView({
+		el.scrollIntoView({
 			behaviour: 'smooth'
 		});
 	}
@@ -54,12 +52,20 @@
 			gap: 4rem;
 
 			aside {
-				margin-right: 0.5rem;
-				overflow-y: scroll;
-				ul {
-					display: flex;
-					flex-direction: column;
-					gap: 0.5rem;
+				display: none;
+			}
+
+			@media (min-width: 800px) {
+				aside {
+					display: block;
+					margin-right: 0.5rem;
+					overflow-y: scroll;
+					ul {
+						height: 100%;
+						display: flex;
+						flex-direction: column;
+						gap: 0.5rem;
+					}
 				}
 			}
 		}
