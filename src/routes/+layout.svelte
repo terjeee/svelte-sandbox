@@ -16,12 +16,12 @@
 <div class="app">
 	<nav><img src={IconSvelte} alt="Svelte Logo" /></nav>
 	<div>
-		<aside>
+		<!-- <aside>
 			<ul>
 				<a href="#aftenposten" on:click|preventDefault={scrollToView}>Aftenposten</a>
 				<a href="#graf-01" on:click|preventDefault={scrollToView}>Graf</a>
 			</ul>
-		</aside>
+		</aside> -->
 		<slot />
 	</div>
 	<footer>:)</footer>
@@ -47,28 +47,28 @@
 			}
 		}
 
-		div {
-			display: flex;
-			gap: 4rem;
+		// div {
+		// 	display: flex;
+		// 	gap: 4rem;
 
-			aside {
-				display: none;
-			}
+		// 	aside {
+		// 		display: none;
+		// 	}
 
-			@media (min-width: 800px) {
-				aside {
-					display: block;
-					margin-right: 0.5rem;
-					overflow-y: scroll;
-					ul {
-						height: 100%;
-						display: flex;
-						flex-direction: column;
-						gap: 0.5rem;
-					}
-				}
-			}
-		}
+		// 	@media (min-width: 800px) {
+		// 		aside {
+		// 			display: block;
+		// 			margin-right: 0.5rem;
+		// 			overflow-y: scroll;
+		// 			ul {
+		// 				height: 100%;
+		// 				display: flex;
+		// 				flex-direction: column;
+		// 				gap: 0.5rem;
+		// 			}
+		// 		}
+		// 	}
+		// }
 
 		footer {
 			margin-top: auto;
