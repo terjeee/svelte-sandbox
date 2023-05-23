@@ -59,7 +59,7 @@
 	<h2>To mangemillionærer</h2>
 	<p>
 		Med Støre og Vestre i ledelsen får Arbeiderpartiet både en leder og en nestleder som en har en formue på flere titalls
-		millioner kroner.
+		millioner kroner...
 	</p>
 </section>
 
