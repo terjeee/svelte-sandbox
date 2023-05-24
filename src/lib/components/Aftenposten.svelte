@@ -1,8 +1,5 @@
 <script lang="ts">
-	import cat1 from '../images/cat1.jpg';
-	import cat2 from '../images/cat2.jpg';
-	import cat3 from '../images/cat3.jpg';
-	import cat4 from '../images/cat4.jpg';
+	import cat from '"@/images/cat.jpg';
 	import AP_Merkalapp from './lego/AP_Merkalapp.svelte';
 
 	let visMer = false;
@@ -34,7 +31,7 @@
 				{#each divisjon as politiker}
 					<li>
 						<div>
-							<img src={cat4} alt="politiker" />
+							<img src={cat} alt="politiker" />
 						</div>
 						<h3>{politiker.navn}</h3>
 						<p>{politiker.stilling}</p>
