@@ -1,6 +1,6 @@
 <script lang="ts">
 	import cat from '$lib/images/cat.jpg';
-	import AP_Merkalapp from '$lib/components/lego/AP_Merkalapp.svelte';
+	import AP_Merkalapp from '$lib/components/Aftenposten/AP_Merkalapp.svelte';
 
 	let visMer = false;
 

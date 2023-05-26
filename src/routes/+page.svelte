@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Graf_01 from '$lib/components/Graf_01.svelte';
-	import Aftenposten from '$lib/components/Aftenposten.svelte';
+	import Graf_01 from '$lib/components/Graf_01/Graf_01.svelte';
+	import Aftenposten from '$lib/components/Aftenposten/Aftenposten.svelte';
 </script>
 
 <svelte:head>
@@ -8,7 +8,7 @@
 </svelte:head>
 
 <main>
-	<!-- <Graf_01 /> -->
+	<Graf_01 />
 	<Aftenposten />
 </main>
 
