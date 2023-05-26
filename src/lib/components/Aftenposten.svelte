@@ -1,6 +1,6 @@
 <script lang="ts">
-	import cat from '"@/images/cat.jpg';
-	import AP_Merkalapp from './lego/AP_Merkalapp.svelte';
+	import cat from '$lib/images/cat.jpg';
+	import AP_Merkalapp from '$lib/components/lego/AP_Merkalapp.svelte';
 
 	let visMer = false;
 
@@ -62,9 +62,8 @@
 
 <style lang="scss">
 	section {
-		max-width: 600px;
-		margin: 0 auto;
-
+		padding: 4rem 0;
+		border-bottom: 0.5px solid black;
 		.container {
 			position: relative;
 			max-height: 2250px;
