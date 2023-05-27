@@ -62,8 +62,6 @@
 
 <style lang="scss">
 	section {
-		padding: 4rem 0;
-		border-bottom: 0.5px solid black;
 		.container {
 			position: relative;
 			max-height: 2250px;
