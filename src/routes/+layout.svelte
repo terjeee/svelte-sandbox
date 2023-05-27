@@ -72,7 +72,7 @@
 
 		footer {
 			margin-top: auto;
-			padding: 2rem 0;
+			padding: 4rem 0 2rem 0;
 			display: flex;
 			justify-content: center;
 		}
