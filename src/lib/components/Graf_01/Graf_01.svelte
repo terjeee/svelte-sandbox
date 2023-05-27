@@ -42,7 +42,7 @@
 					r={hoveredData && hoveredData === student ? 8 : 6}
 					fill="red"
 					stroke="black"
-					opacity={hoveredData ? (hoveredData === student ? 1 : 0.25) : 1}
+					opacity={hoveredData ? (hoveredData === student ? 1 : 0.5) : 1}
 					on:mouseover={() => (hoveredData = student)}
 					on:focus
 				/>{/each}
