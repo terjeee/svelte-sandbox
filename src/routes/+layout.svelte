@@ -38,7 +38,7 @@
 
 		nav {
 			padding: 1rem 0;
-			margin-bottom: 2rem;
+			margin-bottom: 4rem;
 			display: flex;
 			justify-content: center;
 

@@ -9,7 +9,7 @@ export const DUMMY_DATA = [
 	{ name: 'Ethan', hours: 30, grade: 30 },
 	{ name: 'Roy', hours: 8, grade: 10 },
 	{ name: 'Denizhan', hours: 35, grade: 79 },
-	{ name: 'J', hours: 52, grade: 65 },
+	{ name: 'Jay', hours: 52, grade: 65 },
 	{ name: 'Greyson', hours: 39, grade: 50 },
 	{ name: 'Marshall', hours: 16, grade: 30 },
 	{ name: 'Jonny', hours: 30, grade: 53 },
