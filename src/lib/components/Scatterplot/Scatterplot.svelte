@@ -27,7 +27,6 @@
 		.range([height - margin.top - margin.bottom, 0]);
 
 	let hoveredData: Student | null = null;
-	$: console.log(hoveredData);
 </script>
 
 <div class="graph" bind:clientWidth={width} on:mouseleave={() => (hoveredData = null)}>

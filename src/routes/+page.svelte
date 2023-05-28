@@ -1,6 +1,9 @@
 <script lang="ts">
-	import Graf_01 from '$lib/components/Graf_01/Graf_01.svelte';
+	import Scatterplot from '$lib/components/Scatterplot/Scatterplot.svelte';
 	import Aftenposten from '$lib/components/Aftenposten/Aftenposten.svelte';
+	import Divider01 from '$lib/components/Divider/Divider01.svelte';
+	import Divider02 from '$lib/components/Divider/Divider02.svelte';
+	import Heatmap from '$lib/components/Heatmap/Heatmap.svelte';
 </script>
 
 <svelte:head>
@@ -8,17 +11,18 @@
 </svelte:head>
 
 <main>
-	<Graf_01 />
+	<Scatterplot />
+	<Divider01 />
 	<Aftenposten />
+	<Divider02 />
+	<Heatmap />
 </main>
 
 <style lang="scss">
 	main {
-		margin: 0 auto;
-		max-width: 800px;
 		display: flex;
 		flex-direction: column;
-		gap: 8rem;
+		gap: 10rem;
 		display: flex;
 		flex-direction: column;
 	}
