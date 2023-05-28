@@ -14,8 +14,11 @@
 
 <style lang="scss">
 	main {
-		max-width: 800px;
 		margin: 0 auto;
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		gap: 8rem;
 		display: flex;
 		flex-direction: column;
 	}

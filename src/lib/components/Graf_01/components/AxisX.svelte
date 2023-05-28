@@ -9,8 +9,8 @@
 
 <g transform="translate({margin.left})">
 	{#each xTicks as tick, index}
-		<text x={xScale(tick)} y={height - margin.bottom} dominant-baseline="hanging" dy="4"
-			>{index === 0 ? tick : `${tick}%`}</text
-		>
+		<text x={xScale(tick)} y={height - margin.bottom} dominant-baseline="hanging" dy="4">
+			{index === 0 ? tick : `${tick}%`}<br />
+		</text>
 	{/each}
 </g>
