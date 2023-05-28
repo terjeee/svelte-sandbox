@@ -7,7 +7,7 @@
 	export let width: number;
 </script>
 
-<g transform="translate({margin.left} {margin.top})">
+<g transform="translate({0} {margin.top})">
 	{#each yTicks as tick, index}
 		<text x="0" y={yScale(tick)} dy="-4"
 			>{index === 0 ? '' : tick} {yTicks.length - 1 === index ? ' hours studied' : ''}
@@ -18,7 +18,6 @@
 
 <style lang="scss">
 	g {
-		color: red;
 		text {
 			font-size: 0.85rem;
 		}

@@ -3,7 +3,7 @@
 	import Aftenposten from '$lib/components/Aftenposten/Aftenposten.svelte';
 	import Divider01 from '$lib/components/Divider/Divider01.svelte';
 	import Divider02 from '$lib/components/Divider/Divider02.svelte';
-	import Heatmap from '$lib/components/Heatmap/Heatmap.svelte';
+	import D3 from '$lib/components/D3/D3.svelte';
 </script>
 
 <svelte:head>
@@ -15,7 +15,7 @@
 	<Divider01 />
 	<Aftenposten />
 	<Divider02 />
-	<Heatmap />
+	<D3 />
 </main>
 
 <style lang="scss">

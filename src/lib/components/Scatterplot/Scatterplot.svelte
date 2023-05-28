@@ -20,7 +20,7 @@
 	$: xScale = d3
 		.scaleLinear()
 		.domain([0, 100])
-		.range([0, width - margin.right - margin.left]);
+		.range([0, width - margin.right]);
 	const yScale = d3
 		.scaleLinear()
 		.domain([0, d3.max(DUMMY_DATA, (data) => data.hours) as number])
@@ -31,9 +31,9 @@
 
 <div class="graph" bind:clientWidth={width} on:mouseleave={() => (hoveredData = null)}>
 	<svg {width} {height}>
-		<AxisX {margin} {height} {xScale} xTicks={[0, 25, 50, 75, 100]} />
+		<AxisX {margin} {height} {xScale} xTicks={[0, 20, 40, 60, 80, 100]} />
 		<AxisY {margin} {width} {yScale} yTicks={[0, 10, 20, 30, 40, 50, 60]} />
-		<g transform="translate({margin.top} {margin.left})">
+		<g transform="translate({margin.left / 2} {margin.top})">
 			{#each DUMMY_DATA as student}
 				<circle
 					cx={xScale(student.grade)}
