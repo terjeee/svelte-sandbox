@@ -1,9 +1,9 @@
 <script lang="ts">
 	import Scatterplot from '$lib/components/Scatterplot/Scatterplot.svelte';
 	import Aftenposten from '$lib/components/Aftenposten/Aftenposten.svelte';
-	import Divider01 from '$lib/components/Divider/Divider01.svelte';
-	import Divider02 from '$lib/components/Divider/Divider02.svelte';
-	import D3 from '$lib/components/D3/D3.svelte';
+	import Divider from '$lib/components/Divider/Divider.svelte';
+	import UnovisLineChart from '$lib/components/Unovis/UnovisLineChart.svelte';
+	import Dialog from '$lib/components/Dialog(Modal)/Dialog.svelte';
 </script>
 
 <svelte:head>
@@ -12,10 +12,12 @@
 
 <main>
 	<Scatterplot />
-	<Divider01 />
+	<Divider />
 	<Aftenposten />
-	<Divider02 />
-	<D3 />
+	<Divider />
+	<UnovisLineChart />
+	<Divider />
+	<Dialog />
 </main>
 
 <style lang="scss">
