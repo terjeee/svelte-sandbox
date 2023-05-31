@@ -89,7 +89,7 @@
 			}
 
 			&::backdrop {
-				// background: rgba(0, 0, 0, 0.1);
+				background: rgba(0, 0, 0, 0);
 				backdrop-filter: blur(2.5px);
 			}
 		}
