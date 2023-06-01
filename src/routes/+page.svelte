@@ -1,9 +1,10 @@
 <script lang="ts">
 	import Scatterplot from '$lib/components/Scatterplot/Scatterplot.svelte';
 	import Aftenposten from '$lib/components/Aftenposten/Aftenposten.svelte';
-	import Divider from '$lib/components/Divider/Divider.svelte';
+	// import Divider from '$lib/components/Divider/Divider.svelte';
 	import UnovisLineChart from '$lib/components/Unovis/UnovisLineChart.svelte';
 	import Dialog from '$lib/components/Dialog(Modal)/Dialog.svelte';
+	import MapLibre from '$lib/components/MapLIbre/MapLibre.svelte';
 </script>
 
 <svelte:head>
@@ -12,12 +13,14 @@
 
 <main>
 	<Scatterplot />
-	<Divider />
+	<!-- <Divider /> -->
 	<Aftenposten />
-	<Divider />
+	<!-- <Divider /> -->
 	<UnovisLineChart />
-	<Divider />
+	<!-- <Divider /> -->
 	<Dialog />
+	<!-- <Divider /> -->
+	<MapLibre />
 </main>
 
 <style lang="scss">
